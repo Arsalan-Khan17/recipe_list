@@ -8,4 +8,10 @@ import {Recipe} from "./recipes/recipe.model";
 })
 export class AppComponent {
   title = 'recipe_app';
+  loadedFeature = 'recipe';
+
+  onNavigate(feature:string){
+    this.loadedFeature = feature;
+  }
+
 }
